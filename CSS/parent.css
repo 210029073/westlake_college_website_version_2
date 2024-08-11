@@ -1,0 +1,368 @@
+﻿/*!==========================================================================================*!
+******************************* Main External CSS Stylesheet *********************************/
+	/*The Charset Rule will be used so that the CSS Stylesheet the specific character
+	set or encoding for this External CSS Stylesheet*/
+	@charset "utf-8";
+	/*This is a Pseudo-Element CSS Rule of which will Change the Colour
+	to Bright Colour when Selectig an HTML Element such as an Inline Element*/
+	::selection {
+		
+		background-color: rgba(113,216,0,1.00);
+		color: rgb(255,255,255);
+		
+	}
+	/* This is the CSS Selector or Rule for Heading 1, this will display the
+	configuration for each internal webpage such as the font-face sans-serif
+	with the font-size 24px, with the necessary font-colour and spacing*/
+	h1 {
+		font-size: 24px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		margin-left: 7.5;
+		margin-right: 5px;
+		text-align: center;
+		font-style: bold;
+		color: rgb(255,255,255);
+		
+	}
+	/*This is the CSS Selector or Rule for Heading 2, this will display the
+	configuration for each internal webpage such as the font-face sans-serif
+	with the font-size 20px, with the necessary font-colour and spacing*/
+	h2 {
+		margin-left: 7.5px;
+		margin-right: 5px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 20px;
+		font-style: bold;
+		color: rgb(255,255,255);
+		
+	}
+	/* This is the CSS Selector or Rule for the Paragraph inline element, this will 
+	display the configuration for each internal webpage such as the 
+	font-face sans-serif with the font-size 16px, with the necessary 
+	font-colour and spacing */
+	p {
+		
+		margin-left: 10px;
+		margin-right: 8.5px;
+		font-size: 17px;
+		font-family: Arial;
+		color: rgb(255,255,255);
+		
+	}
+	/*This is Unique Selector or the CSS Rule for the Header, such as the necessary 
+	CSS Properties for the Background Colour, dimensions size and the necessary 
+	spacing so that the header is placed on the centre of the page*/
+	#header {
+		background-color: #6BCD30;
+		height: 110px;
+		width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/*This is Unique Selector or the CSS Rule for the Navigation Bar, such as the 
+	necessary CSS Properties for the Background Colour, dimensions size 
+	and the necessary spacing so that the header is placed on the centre of the page*/
+	#navigation {
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		background-color: #8FD36E;
+		height: 130px;
+		width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+		position: sticky;
+		top:0;
+		z-index: 3;
+	}
+	/*This is the CSS Rule or Selector for the Rollover Buttons that are used for the
+	Navigation Bar*/
+	#btnStudentsPage {
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		float: left;
+		height: 90px;
+		width: 280px;
+		margin: 10px;
+	}
+	/*This is the CSS Rule or Selector for the Rollover Buttons that are used for the
+	Navigation Bar*/
+	#btnCoursesPage {
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		float: left;
+		height: 90px;
+		width: 280px;
+		margin-top: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	/*This is the CSS Rule or Selector for the Rollover Buttons that are used for the
+	Navigation Bar*/
+	#btnAboutUsPage {
+		float: left;
+		height: 90px;
+		width: 280px;
+		margin-top: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	/* This is the CSS Rule or Unique CSS Selector for the Default Container Size*/
+	#mainContainer {
+		background-color: rgba(207,207,207,1.00);
+		height: 750px;
+		width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/* This is the CSS Rule or Unique CSS Selector for the Default Footer for each
+	page and the dimenisions, spacings, allignments and colour, position, background 
+	are declared within each CSS Properties Below*/
+	#footer {
+		height: 210px;
+		width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #2A2A2A;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		color: #FFFFFF;
+		text-align: center;
+		position: sticky;
+		z-index: 1;
+		top: 1750px;
+	}
+	/*This is the Default CSS Rule for the Image Gallery or for the Image Slideshow
+	Container, alongside with the dimension size, spacing and the z-index or the
+	stack level for the Image Gallery Container declared within each desginated
+	CSS Property*/
+	#imgGallery-container {
+		height: 325px;
+		width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+		z-index: 1;
+	}
+	/*This is the Default CSS Rule for Westlake Colleges Logo based on the positioning,
+	Dimension Size, spacing declared within each designated CSS Property*/
+	#imgLogo {
+		float: left;
+		height: 110px;
+		width: 206px;
+		margin-left: 375px;
+	}
+	/*This is the Default CSS Rule or the Unique Selector for the Button that will
+	provide the functionality of automatically scrolling to the top of the webpage
+	based on the onClick event that will be written and rendered in JavaScript,
+	and the necessary styles for the positioning, display properties set to blank
+	font-styles, font-face and the animation transition delay or duration rate, 
+	positioning and the arranging of objects within each designated CSS property*/
+	#btnTop {
+		right: 35px;
+		bottom: 240px;
+		border: none;
+		outline: none;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		display: none;
+		font-size: 16px;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+		transition-duration: 0.4s;
+		cursor: pointer;
+		background-color: #4CAF50;
+		padding-top: 16px;
+		padding-right: 32px;
+		padding-bottom: 16px;
+		padding-left: 32px;
+		position: fixed;
+		z-index: 4;
+	}
+	/*This is the Pseudo-Class for the button that will automatically scroll to the
+	top of the webpage, this will automatically perform the task of transitioning
+	to a different background colour such as white and change the properties of the 
+	button when hovered over by the users mouse*/
+	#btnTop:hover {
+		background-colour: #FFFFFF;
+		colour: #4CAF50;
+		font-style: normal;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		color: #4CAF50;
+		background-color: #FFFFFF;
+		border: thin solid #4CAF50;
+	}
+	/*This is the CSS Rule for the List Element*/
+	 li {
+		font-family: Arial;
+		font-size: 16px;
+		color: rgb(255,255,255);
+		padding-right: 1px;
+		padding-left: 1px;
+	}
+	/*This is the CSS Rule for the College Logo that is located in the Footer for
+	each page*/
+	#footer_CollegeLogo {
+		float: left;
+		width: 310px;
+		height: 115px;
+		padding-top: 20px;
+	}
+	/*Declaring the first footer container that will be located on the left-hand
+	side of the footer and the dimensions size properties are declared within each
+	designated CSS Property*/
+	#footerContainer1 {
+		float: left;
+		height: 210px;
+		width: 310px;
+	}
+	/*Declaring a row for the navigation menu that is declared below the footer*/
+	#footerContainer_Text_row1 {
+		font-size: 14px;
+		color: rgb(255,255,255);
+		height: 210px;
+		width: 196.6px;
+		text-align: left;
+		float: left;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*Declaring a row for the navigation menu that is declared below the footer*/
+	#footerContainer_Text_row2 {
+		font-size: 14px;
+		color: rgb(255,255,255);
+		height: 210px;
+		width: 196.6px;
+		text-align: left;
+		float: left;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/*Declaring a row for the navigation menu that is declared below the footer*/
+	#footerContainer_Text_row3 {
+		font-size: 14px;
+		color: rgb(255,255,255);
+		height: 210px;
+		width: 196.6px;
+		text-align: left;
+		float: left;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/*This is the CSS Rule for the Social Media Icons that are located 
+	below in the Footer*/
+	#socialMedia_Icons {
+		text-decoration: none;
+		color: white;
+	}
+	/*This is the CSS Rule for the Social Media icon container that 
+	will be used to house or contain the social media and that is located
+	located below in the footer and the dimension size, spacing and spacings
+	are declared for each designated CSS property*/
+	#footerSocialMedia_Icons {
+		height: 50px;
+		width: 310px;
+		float: left;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	/*This is the CSS Rule for the Individual Social Media icon container that 
+	is located below in the footer and the dimension size, spacing and spacings
+	are declared for each designated CSS property*/
+	#footerContainer1_Icons1 {
+		float: left;
+		height: 50px;
+		width: 67.5px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	/*This is the CSS Rule for the Individual Social Media icon container that 
+	is located below in the footer and the dimension size, spacing and spacings
+	are declared for each designated CSS property*/
+	#footerContainer1_Icons2 {
+		float: left;
+		height: 50px;
+		width: 67.5px;
+		margin-right: 5px;
+	}
+	/*This is the CSS Rule for the Individual Social Media icon container that 
+	is located below in the footer and the dimension size, spacing and spacings
+	are declared for each designated CSS property*/
+	#footerContainer1_Icons3 {
+		float: left;
+		height: 50px;
+		width: 67.5px;
+		margin-right: 5px;
+	}
+	/*This is the CSS Rule for the Individual Social Media icon container that 
+	is located below in the footer and the dimension size, spacing and spacings
+	are declared for each designated CSS property*/
+	#footerContainer1_Icons4 {
+		float: left;
+		height: 50px;
+		width: 67.5px;
+		margin-right: 5px;
+	}
+	/*This is the CSS Rule for storing Hyperlinks in a container that will be 
+	stored in the form of rows within the footer*/
+	#footerLists_Hyperlinks {
+		margin-right: 17.5px;
+		list-style: none;
+		font-family: arial;
+		font-size: 14px;
+		text-align: left;
+	}
+	/*This is the CSS Rule for the Hyperlinks*/
+	#footerHyperlinks {
+		color: #FFFFFF;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/*This Pseudo-Class will be used to prevent the hyperlinks from being forced
+	to change color*/
+	#footerHyperlinks:active {
+		text-decoration: underline;
+		color: white;
+	}
+	/*This is the CSS Rule for ensuring that the hyperlinks and its row are enclosed
+	in the form of a container in the right-hand side of the footer*/
+	#navContainer {
+		float: right;
+		height: 210px;
+		width: 590px;
+	}
+	
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgb(189, 252, 133);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 99;
+      margin-left: 20px;
+      margin-top: -21px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      border-width: thin;
+      border-bottom-color: black;
+      border-bottom-style: solid;
+      color: black;
+      padding: 10px 16px;
+      text-decoration: none;
+      font-family: Arial;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+
+/***************************** End of Main External CSS Stylesheet ****************************/
+

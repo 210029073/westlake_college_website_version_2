@@ -1,0 +1,313 @@
+﻿<!doctype html>
+<!-- Beginning of Html Document -->
+<html lang="en">
+<!-- Start of Head Tag -->
+<head>
+	<!-- The Meta Tag will ensure that the the text descriptions or visible text that is exposed on the webpage wil display correctly from the specified character set which (UTF-8)  -->
+	<meta charset="utf-8">
+	<!-- Meta Tag will be used to ensure that the viewport functions correctly when rendering the webpage from the users mobile browser -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title of the Webpage -->
+	<title>About Us</title>
+	<!-- Main External Stylesheet for Structuring Various Core Features for the Webpages -->
+	<link href="CSS/parent.css" rel="stylesheet" type="text/css">
+	<!-- A JavaScript Source File for rendering the Icons from the Font Awesome Kit's Script -->
+	<script src="https://kit.fontawesome.com/a9c2fecc86.js"></script>
+	<!-- Starting Point for Internal CSS Stylesheet -->
+	<style type="text/css">
+		/* Unique/Identifier CSS Selector for Applying a Style for adjusting and structuring the length and width of the webpages layout and by applying spacing or padding*/
+		#sub1 {
+			background-color: #DFDFDF;
+			float: left;
+			height: 650px;
+			width: 550px;
+		}
+		/* Unique/Identifier CSS Selector for Applying a Style for the block-level element of which will apply the necessary padding or spacing*/
+		#sub2 {
+			background-color: #DFDFDF;
+			float: left;
+			height: 650px;
+			width: 350px;
+		}
+		/* Unique/Identifier CSS Selector for Applying a Style for the block-level element of which will apply the necessary padding or spacing for the first content that will be displayed at the top of the webpage */
+		#subContent1 {
+			height: 620px;
+			width: 525px;
+			margin-top: 15px;
+			margin-right: 14.5px;
+			margin-bottom: 10px;
+			margin-left: 14.5px;
+			background-color: #8E8E8E;
+		}
+		/* Unique Identifier CSS Selector for Applying a Style for the block-level element of which will apply the necessary padding or spacing when adding the contents to sub2Contents1 */
+		#sub2Content1 {
+			background-color: #8E8E8E;
+			height: 275px;
+			width: 340px;
+			margin-top: 15px;
+			margin-right: auto;
+			margin-bottom: 10px;
+			margin-left: auto;
+		}
+		/*Unique Identifier CSS Selector for Applying a Style for the block-level element of which will apply the necessary padding or spacing when adding the contents to sub2Contents2*/
+		#sub2Content2 {
+			height: 275px;
+			width: 340px;
+			margin-right: auto;
+			margin-left: auto;
+			background-color: #8E8E8E;
+		}
+	</style>
+	<!-- End of Internal CSS Stylesheet -->
+
+	<!-- Calling an External JavaScript Source File for featuring the functinality of an button automatically scrolling to the top of the webpage -->
+	<script type="text/javascript">
+		function MM_swapImgRestore() { //v3.0
+		  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+		}
+		function MM_preloadImages() { //v3.0
+		  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+		}
+
+		function MM_findObj(n, d) { //v4.01
+		  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+		  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+		  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+		  if(!x && d.getElementById) x=d.getElementById(n); return x;
+		}
+
+		function MM_swapImage() { //v3.0
+		  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+		   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+		}
+	</script>
+	<!-- End of Internal JavaScript Script -->
+<!-- End of Head Tag -->
+</head>
+<!-- Beginning of Body Tag -->
+<!-- The Onload Attribute will therefore automate the task of loading the necessary images that are used for forumlating the Rollover Button -->
+<body onLoad="MM_preloadImages('rolloverButton/Students Page Roll Over Button - Selected.gif','rolloverButton/Courses Page Roll Over Button - Selected.gif','rolloverButton/About Us Page Roll Over Button - Selected.gif')">
+	<!-- Opening of Header Tag -->
+	<!-- The Header Tag will contain a nested div tag, which is College Logo, once the user has clicked the College Logo it will redirect to the home web page. -->
+	<div id="header">
+	<!-- The Header Tag will contain a nested div tag, which is College Logo, once the user has clicked the College Logo it will redirect to the home web page. -->
+  		<div id="imgLogo"><a href="Home.html"><img src="westlakeCollegeLogo.gif" width="206" height="100" title="Re-Direct to Homepage" alt="Westlake College Logo"></a></div>
+	</div>
+	<!-- The Closing of the Header Tag -->
+
+	<!-- The Opening of the Div Tag for the Navigation Bar -->
+	<div id="navigation">
+  	<!-- Within the navigation DIV Tag, it will contain a series of nested DIV Tags, of which will provide and feature the capability for at least three Rollover button in terms of being hovered over or regarded as active based on the onMouseout and onMouseOver Attributes -->
+        <!-- First Rollover Button Image Source and Properties -->
+        <div class="dropdown">
+            <div class="dropbtn" id="btnStudentsPage">
+                <a href="StudentsPage.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('btnStudents','','rolloverButton/Students Page Roll Over Button - Selected.gif',1)">
+                    <img src="rolloverButton/Students Page Roll Over Button - Active.gif" title="Students Page" alt="Students" width="283" height="90" id="btnStudents">
+                </a>
+                <div class="dropdown-content">
+                    <a href="Extra_Curriculum.html">Extra Curriculum  &#9658;</a>
+                    <a href="Financial_Support.html">Financial Support Page  &#9658;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Rollover Button Image Source and Properties -->
+        <div class="dropdown">
+            <div id="btnCoursesPage">
+                <a href="CoursesPage.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imgCoursesPage','','rolloverButton/Courses Page Roll Over Button - Selected.gif',1)">
+                    <img src="rolloverButton/Courses Page Roll Over Button - Active.gif" alt="Courses Page" title="Courses Page" width="283" height="90" id="imgCoursesPage">
+                </a>
+                <div class="dropdown-content">
+                    <a href="Level3_Ext_Dip_IT.html">BTEC Level 3 Extended Diploma in IT  &#9658;</a>
+                    <a href="Level2_Firsts_Cert_IT.html">BTEC Level Firsts Ceritificate in IT  &#9658;</a>
+                    <a href="AS_ALevel_Comp_Sci.html">A & AS Level in Computer Science  &#9658;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Rollover Button Image Source and Properties -->
+        <div class="dropdown">
+            <div id="btnAboutUsPage">
+                <a href="About.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imgAboutUsPage','','rolloverButton/About Us Page Roll Over Button - Selected.gif',1)">
+                    <img src="rolloverButton/About Us Page Roll Over Button - Active.gif" alt="About Us" title="About Us" width="283" height="90" id="imgAboutUsPage">
+                </a>
+            </div>
+        </div>
+  	<!-- The Ending of the Div Tag for the Navigation Bar -->	
+	</div>
+	<!-- The Beginning of the Image Gallery Div Tag -->
+	<div id="imgGallery-container">
+		<img src="JPEG/LCB-SouthBankCampus3-copy-downscaled.jpg" width="900" height="325">
+	</div>
+	<!-- The Ending of th Image Gallery or Slideshow Div Tag -->
+
+	<!-- This is the Opening of the Web Container Div Tag, of which will be used to strucutre the web contents based on the padding or space or allignment that are being viewed on the particular webpage based on maintaining the control of the fixed width and height for the webpage -->
+	<div id="mainContainer">
+	  <!-- The Beginning of the Sub1 Container Div Tag -->
+		<div id="sub1">
+	  	<!-- The Beginning of the Nested Div Tag for organising the structure of the web content based on the padding and space that are used within the Webpage as well as maintaining the control of fixed width and height within the subContent1 Div Tag -->
+			<div id="subContent1">
+			<!-- Text Description Related to the College such as priorities and missions -->
+		  		<h1>About Us Overview</h1>
+		  		<p>We are committed to ensuring students have the relevant skills, qualifications and experience required for their future, whether that is to seek employment or continue their education at college or university.
+				</p>
+				<p>The college is actively involved in the community, with local businesses and has excellent links with industry; this not only allows us to provide excellent opportunities for our students to gain work experience placements, Apprenticeships and job opportunities but for the college to help employers ensure they have skilled workforce needed for the future. </p>
+				<p>We believes that our learners are the most important members of the College and that it is the responsibility of all College staff to help them achieve their full potential&nbsp;</p>
+		  		<h2>Our Missions</h2>
+		  		<p>Our Main Goal is to provide outstanding education and training which is primarily vocational, in response to the needs of learners and employers</p>
+				<h2>Opening Hours</h2>
+				<!-- Unordered List tag is Used to Declare a Row for displaying the hyperlinks that are within the footer  -->
+				<ul>
+					<!-- List Item is Used to Declare a Row for displaying the College Opening Times within the Westlake Collge Website  -->
+					<li>Monday: 8am - 6pm</li>
+					<!-- Breakpoint is used to add space for the hyperlinks within the footer-->
+					<br>
+					<!-- List Item is Used to Declare a Row for displaying the College Opening Times within the Westlake Collge Website  -->
+					<li>Tuesday - Thursday: 8am - 9:30pm</li>
+					<!-- Breakpoint is used to add space for the hyperlinks within the footer-->
+					<br>
+					<!-- List Item is Used to Declare a Row for displaying the College Opening Times within the Westlake Collge Website  -->
+					<li>Friday: 8am - 5pm</li>
+				</ul>
+		  	<!-- Ending for the subContent1 -->
+			</div>
+			<!-- Ending of Sub1 Div Tag -->
+	  	</div>
+		<!-- Beginning of Sub2 Sub-Container Div Tag -->
+	  	<div id="sub2">
+			<!-- Text Description Related to the College such as the Contacts details and call-centre opening times -->
+	    	<div id="sub2Content1">
+				<h1>Contact Details</h1>
+				<h2>Westlake College (Westlake Campus)</h2>
+				<h2>1 Longbridge Ln, Birmingham B31 2TW</h2>
+				<h2>Phone Number: 0121 694 5000</h2>
+				<p>Call-Centre Opening/Operating Times:</p>
+				<p>Monday - Friday: 8am - 5pm</p>
+			</div>
+			<!-- Ending of Sub2 Sub-Container Div Tag -->
+
+			<!-- Beginning of Sub2Content2 Sub Container -->
+			<div id="sub2Content2">
+				<!-- The Iframe Tag will represent Westlake College's geolocation using Google Maps -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.5805560828053!2d-1.9881464843135197!3d52.3961536531525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870958538b92a27%3A0x53df394c9c03786b!2sLongbridge%20Campus%20(Bournville%20College)!5e0!3m2!1sen!2suk!4v1607522203845!5m2!1sen!2suk" width="340" height="275" frameborder="0" style="border:0;" allowfullscreen="" alt="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<!-- Ending of Sub2Content2 Sub-Container -->
+	  	</div>
+		<!-- Ending of Sub2 Sub-Container -->
+	</div>
+	<!-- End of mainContainer Div Tag -->
+
+		<!-- Beginning of Footer Tag -->
+	<footer id="footer">
+		<!-- First Footer Container located on the left-hand side of the footer -->
+		<div id="footerContainer1">
+			<!-- This is the Nested Div Tag for Displaying Westlake College Logo within the footerContainer1 Div Tag --> 
+			<div id="footer_CollegeLogo">
+				<a href="Home.html">
+					<img src="westlakeCollegeLogo_BW.gif" alt="Westlake College Logo">
+				</a>
+				<!-- End of footer_CollegeLogo Div Tag -->
+			</div>
+			<!-- This is the Nested Div Tag for Displaying the Social Media Icon within the footerContainer1 Div Tag --> 
+			<div id="footerSocialMedia_Icons">
+				<!-- The Nested Div Tags below will therefore render the Social Media Icons, as well as specifying padding and space/adjustments for each and every Div Tag -->
+				<div id="footerContainer1_Icons1">
+				<!-- The Nested Div Tags below will therefore render the Social Media Icon, as well as specifying padding and space/adjustments for the particulre Div Tag that represents the Social Media Icons as well as redirecting to the corresponding social media page or YouTube Channel for the Particular Nested Div Tags  -->
+					<a href="https://www.twitter.com/bournville?lang=en/" id="socialMedia_Icons"><i class="fab fa-twitter" style="font-size: 48px;"></i>
+					<!-- Ending of footerContainer1_Icons1 Div Tag -->
+					</a>
+				</div>
+				<div id="footerContainer1_Icons2">
+				<!-- The Nested Div Tags below will therefore render the Social Media Icon, as well as specifying padding and space/adjustments for the particulre Div Tag that represents the Social Media Icons as well as redirecting to the corresponding social media page or YouTube Channel for the Particular Nested Div Tags  -->
+					<a id="socialMedia_Icons" href="https://www.facebook.com/southandcitycollege/">
+						<i class="fab fa-facebook" style="font-size: 48px;"></i>
+					</a> 
+					<!-- Ending of footerContainer1_Icons2 Div Tag -->
+				</div>
+				<div id="footerContainer1_Icons3">
+				<!-- The Nested Div Tags below will therefore render the Social Media Icon, as well as specifying padding and space/adjustments for the particulre Div Tag that represents the Social Media Icons as well as redirecting to the corresponding social media page or YouTube Channel for the Particular Nested Div Tags  -->
+					<a id="socialMedia_Icons" href="https://www.instagram.com/bournvillecollege/?hl=en">
+						<i class="fab fa-instagram" style="font-size: 48px;"></i>
+					</a>
+					<!-- Ending of footerContainer1_Icons3 Div Tag -->
+				</div>
+				<div id="footerContainer1_Icons4">
+				<!-- The Nested Div Tags below will therefore render the Social Media Icon, as well as specifying padding and space/adjustments for the particulre Div Tag that represents the Social Media Icons as well as redirecting to the corresponding social media page or YouTube Channel for the Particular Nested Div Tags  -->
+					<a id="socialMedia_Icons" href="https://www.youtube.com/user/BournvilleCol">
+						<i class="fab fa-youtube" style="font-size: 48px;"></i>
+					</a>
+					<!-- Ending of footerContainer1_Icons4 Div Tag -->
+				</div>
+				<!-- Ending of footerSocialMedia_Icons Div Tag -->
+			</div>
+			<!-- End of footerContainer1 -->
+		</div>
+		<!-- Beginning of navContainer -->
+		<div id="navContainer">
+			<!-- Beginning of footerContainer_Text_row1 for the hyperlinks that are within the footer -->
+		  	<nav id="footerContainer_Text_row1">
+				<!-- Unordered List tag is Used to Declare a Row for displaying the hyperlinks that are within the footer  -->
+				<ul>
+					<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+					<li id="footerLists_Hyperlinks">
+						<a id="footerHyperlinks" href="Home.html">Home</a>
+					</li>
+					<!-- Breakpoint is used to add space for the hyperlinks within the footer-->
+					<br>
+					<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+					<li id="footerLists_Hyperlinks">
+						<a id="footerHyperlinks" href="StudentsPage.html">Students</a>
+					</li>
+					<!-- Breakpoint is used to add space for the hyperlinks within the footer-->
+					<br>
+					<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+					<li id="footerLists_Hyperlinks">
+						<a id="footerHyperlinks" href="CoursesPage.html">Courses</a>
+					</li>
+				</ul>
+			<!-- End of footerContainer_Text_row1 -->
+			</nav>
+			<nav id="footerContainer_Text_row2">
+				<!-- Unordered List tag is Used to Declare a Row for displaying the hyperlinks that are within the footer  -->
+				<ul>
+					<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+					<li id="footerLists_Hyperlinks"><a id="footerHyperlinks" href="Level2_Firsts_Cert_IT.html">BTEC Level 2 Firsts Certificate in IT</a></li>
+					<br>
+					<li id="footerLists_Hyperlinks"><a id="footerHyperlinks" href="Level3_Ext_Dip_IT.html">BTEC Level 3 Extended Diploma in IT</a></li>
+					<br>
+					<li id="footerLists_Hyperlinks"><a id="footerHyperlinks" href="AS_ALevel_Comp_Sci.html">AS/A-Level in Computer Science</a></li>
+				</ul>
+				<!-- End of footerContainer_Text_row2 -->
+			</nav>
+			<nav id="footerContainer_Text_row3">
+				<ul>
+					<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+					<li id="footerLists_Hyperlinks">
+						<a id="footerHyperlinks" href="Financial_Support.html">Financial Support</a>
+					</li>
+					<br>
+						<!-- Breakpoint is used to add space for the hyperlinks within the footer-->
+					<li id="footerLists_Hyperlinks">
+					<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+						<a id="footerHyperlinks" href="Extra_Curriculum.html">Extra-Curriculum Activities</a>
+					</li>
+					<br>
+					<!-- Breakpoint is used to add space for the hyperlinks within the footer-->
+					<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+					<li id="footerLists_Hyperlinks">
+						<a id="footerHyperlinks" href="About.html">About Us</a>
+					</li>
+				</ul>
+				<!-- End of footerContainer_Text_row3 -->
+			</nav>
+			<!-- Beginning of navContainer -->
+		</div>
+	<!-- End of Footer Tag -->
+	</footer>
+<!-- End of Body Tag -->
+</body>
+<!-- End of HTML Document -->
+</html>

@@ -1,0 +1,412 @@
+<!doctype html>
+<!-- Beginning of the HTML Document -->
+<!-- This Sets the Language for the Webpage -->
+<html lang="en">
+<!-- Beginning of Head Tag -->
+<head>
+	<!-- The Meta Tag will ensure that the the text descriptions or visible text that is exposed on the webpage wil display correctly from the specified character set which (UTF-8)  -->
+	<meta charset="utf-8">
+	<!-- Meta Tag will be used to ensure that the viewport functions correctly when rendering the webpage from the users mobile browser -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title of the Webpage -->
+	<title>Students Page</title>
+	<!-- Main External Stylesheet for Structuring Various Core Features for the Webpages -->
+	<link href="CSS/parent.css" rel="stylesheet" type="text/css">
+	<!-- Another JavaScript Source File for rendering the Icons from the Font Awesome Kit's Script -->
+	<script src="https://kit.fontawesome.com/a9c2fecc86.js"></script>
+	<!-- The End of the External JavaScript Source File -->
+	<!-- Beginning of Internal Stylesheet -->
+	<style type="text/css">
+		@media screen and (min-height: 1250px) {
+			#subContent1 {
+			height: 1650px;
+			margin-top: 45px;
+			margin-right: auto;
+			margin-bottom: 10px;
+			margin-left: auto;
+			background-color: #8E8E8E;
+			box-shadow: 1.5px 3px 5px grey;
+		}
+		}
+		@media screen and (min-height: 1500px) {
+			#subContent1 {
+			height: 1700px;
+			margin-top: 45px;
+			margin-right: auto;
+			margin-bottom: 10px;
+			margin-left: auto;
+			background-color: #8E8E8E;
+			box-shadow: 1.5px 3px 5px grey;
+		}
+		}
+		/* Unique/Identifier CSS Selector for Applying a Style for adjusting and structuring the length and width of the webpages layout and by applying spacing or padding*/
+		#container {
+			background-color: rgba(207,207,207,1.00);
+			height: 1825px;
+			width: 900px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		/* Unique/Identifier CSS Selector for Applying a Style for the block-level element of which will apply the necessary padding or spacing for the first sub-container*/
+		#sub1 {
+			background-color: #DFDFDF;
+			float: left;
+			height: 1725px;
+			width: 585px;
+		}
+		/* Unique/Identifier CSS Selector for Applying a Style for the block-level element of which will apply the necessary padding or spacing for the second sub-container*/
+		#sub2 {
+			background-color: #DFDFDF;
+			float: left;
+			height: 1725px;
+			width: 315px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		/* Unique/Identifier CSS Selector for Applying a Style for the block-level element of which will apply the necessary padding or spacing when adding the contents to sub1Contents1 within the first sub-container*/
+		#subContent1 {
+			height: 1550px;
+			width: 575px;
+			margin-top: 45px;
+			margin-right: auto;
+			margin-bottom: 10px;
+			margin-left: auto;
+			background-color: #8E8E8E;
+			box-shadow: 1.5px 3px 5px grey;
+		}
+		/*Unique Identifier CSS Selector for Applying a Style for the block-level element of which will apply the necessary padding or spacing when adding the contents to sub2Contents1 within the second sub-container */
+		#sub2Content1 {
+			background-color: #8E8E8E;
+			height: 270px;
+			width: 307.5px;
+			margin-right: auto;
+			margin-bottom: 10px;
+			margin-left: auto;
+			box-shadow: 1px 2.5px 10px grey;
+		}
+		/* Unique/Identifier CSS Selector for Applying a Style for the block-level element of which will apply the necessary padding or spacing for the third sub-container */
+		#sub3 {
+			background-color: #DFDFDF;
+			height: 1850px;
+			width: 140px;
+			float: left;
+		}
+		/*Unique Identifier CSS Selector for Applying a Style for the block-level element of which will apply the necessary padding or spacing when adding the contents to sub2Contents2 within the second sub-container */
+		#sub2Content2 {
+			float: right;
+			height: 58.25px;
+			width: 94.75px;
+			margin-top: 1250px;
+			margin-right: 10px;
+			margin-left: 10px;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+		}
+		/* This is a Unique Identifier CSS Rule for distinguishing a layout for the vertical navigation menu*/
+		#ulNavbar {
+			margin: 0px;
+			padding: 0px;
+			width: 307.5px;
+			list-style-type: none;
+		}
+		/* The Class CSS Selector Rule will be used to apply the necessary styles such as by displaying the internal webpages hyperlinks into the form of blocks, as well as configuring the font-style, font-face for the hyperlinks that are displayed as text */
+		li.listNavBar a.hyperlinkNavBar {
+			font-family: Arial;
+			font-size: 20px;
+			font-style: bold;
+			color: rgb(255,255,255);
+			text-decoration: none;
+			padding: 8px 16px;
+			display: block;		
+		}
+		/* The Class Selector CSS Rule will be used to align the vertical navigation menu's hyperlinks to the centre*/
+		li.listNavBar {
+			text-align: center;
+		}
+		/* This is the Class Selector CSS rule with a combinator for the background colour and font colour of the vertical navigation menu*/
+		li.listNavBar a.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+		/* This is the Class Selector CSS Rule with a combinator for when the user hovers over the hyperlink within the vertical navigation menu, it will automatically transition to the green colour slowly based on the duration of the transition set within the CSS property enclosed*/
+		li.listNavBar a:hover:not(.active) {
+		  background-color: rgb(100,200,0);
+		  transition-duration: 0.6s;
+		  color: white;
+		}
+		/* This is the Title Unique Selector CSS Rule for second sub-containers first content box*/
+		#sub2Content1Title {
+			background-color: hsla(0,0%,69%,1);
+			height: 75px;
+			width: 307.5px;
+			margin-top: 45px;
+		}
+	</style>
+	<!-- The Ending for the Main Internal Stylesheet -->
+	<!-- This will Call the JavaScript Source file when the page loads for the script that will automate the task of automatically scrolling from the users current scrolling position to the top of the page -->
+	<script src="JS/scrollTop Function.js" async></script>
+	<!-- Opening for the Internal JavaScript Script -->
+	<script type="text/javascript">
+		function MM_swapImgRestore() { //v3.0
+		  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+		}
+		function MM_preloadImages() { //v3.0
+		  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+		}
+
+		function MM_findObj(n, d) { //v4.01
+		  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+		  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+		  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+		  if(!x && d.getElementById) x=d.getElementById(n); return x;
+		}
+
+		function MM_swapImage() { //v3.0
+		  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+		   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+		}
+	</script>
+	<!-- Ending of Internal JavaScript Script -->
+<!-- Ending of Head Tag -->
+</head>
+<!-- The Onload Attribute will therefore automate the task of loading the necessary images that are used for forumlating the Rollover Button -->
+<body onLoad="MM_preloadImages('rolloverButton/Students Page Roll Over Button - Selected.gif','rolloverButton/Courses Page Roll Over Button - Selected.gif','rolloverButton/About Us Page Roll Over Button - Selected.gif')">
+	<!-- The Opening of the Header Tag -->
+	<div id="header">
+  	<!-- The Header Tag will contain a nested div tag, which is College Logo, once the user has clicked the College Logo it will redirect to the home web page. -->
+  		<div id="imgLogo"><a href="Home.html"><img src="westlakeCollegeLogo.gif" width="206" height="100" alt=""></a></div>
+	</div>
+ 	<!-- Ending of Header Tag -->
+ 	<!-- Opening of Navigation Bar Block-Level Div Tag -->
+	<div id="navigation">
+  	<!-- Within the navigation DIV Tag, it will contain a series of nested DIV Tags, of which will provide and feature the capability for at least three Rollover button in terms of being hovered over or regarded as active based on the onMouseout and onMouseOver Attributes -->
+		<!-- Here, adjustments are made for each rollover button such as the 
+		dimensions based on the width and height attribute -->
+		<!-- First Rollover Button and the Properties and Image Source for calling the correct state of the first Rollover Button -->
+  		<div id="btnStudentsPage"><a href="StudentsPage.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imgStudentsPage','','rolloverButton/Students Page Roll Over Button - Selected.gif',1)"><img src="rolloverButton/Students Page Roll Over Button - Active.gif" alt="Students " width="283" height="90" id="imgStudentsPage"></a></div>
+  		<!-- Second Rollover Button and the Properties and Image Source for calling the correct state of the Second Rollover Button -->
+  		<div id="btnCoursesPage"><a href="CoursesPage.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imgCoursesPage','','rolloverButton/Courses Page Roll Over Button - Selected.gif',1)"><img src="rolloverButton/Courses Page Roll Over Button - Active.gif" alt="Courses Page" width="283" height="90" id="imgCoursesPage"></a></div>
+  		<!-- Third Rollover Button and the Properties and Image Source for calling the correct state of the third Rollover Button -->
+  		<div id="btnAboutUsPage"><a href="About.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imgAboutUsPage','','rolloverButton/About Us Page Roll Over Button - Selected.gif',1)"><img src="rolloverButton/About Us Page Roll Over Button - Active.gif" alt="About Us " width="283" height="90" id="imgAboutUsPage"></a></div>
+	<!-- The Ending of Navigation Bar Div Tag -->
+	</div>
+	<!-- The Opening of the Image Gallery Div Tag -->
+	<div id="imgGallery-container">
+		<img src="JPEG/magdalene_college_library.jpg" width="900" height="325">	
+	</div>
+	<!-- The Ending of the Image Gallery Div Tag -->
+	<!-- The Opening of the Webpage Container -->
+	<div id="container">
+		<!--The Opening of the First Sub-Container -->
+  		<div id="sub1">
+    		<!-- The Opening of the first Content Box for the First Sub-Container -->
+    		<div id="subContent1">
+ 				<!-- Heading or Title for the First Content Box, displaying the minimum entry requirements for Enrolling to the College -->
+	  			<h1>Entry Requirements</h1>
+	  			<h2>For A-Levels</h2>
+	  			<!-- Listing the Necessary Criterias in order to meet entry requirements -->
+  				<p>You Need At Least upto 4 GCSE Qualifications that are a Grade 4 or Above in GCSE Mathematics and English Langauge. The Only Exception for Re-Sits will be if you have a Grade 3 in GCSE Mathematics or English Language.&nbsp; &nbsp;</p>
+	  			<p>For AS-Level Science, Computer Science and&nbsp; Maths We Accept Students with a Grade 6 or Above in GCSE Maths and in Triple or Combined Science Higher.&nbsp; &nbsp;&nbsp;</p>
+	  			<p>Note: GCSE English Literature Subjects is not Accepted.&nbsp; &nbsp; &nbsp; &nbsp;</p>
+	  			<h2>For Vocational/BTEC Courses</h2>
+	  			<!-- Listing the Necessary Criterias in order to meet entry requirements -->
+	  			<p>Minimum Grade Reqiurement are At Least a Grade 3 or Above for Those Who are enrolling for BTEC Level 3 Courses and will be Offered a Re-Sit in Either GCSE English Language or Maths.</p>
+	  			<p>We Offer for a Single GCSE a Merit or Above for Those Who Have Completed the BTEC Level 2 Qualification.</p>
+				<p>For Enquiries, Please Contact Us if your Qualifcation is Not Available.&nbsp;&nbsp;</p>
+				<!-- Displaying the Term Dates for Students in Entry 2021/22 -->
+	  			<h1>Term Dates for 2021/22</h1>
+	  			<h2>Autumn Term 2020</h2>
+	    		<!-- Un-ordered List is used to Display the Terms Dates for
+	    		Autumn Term -->
+				<ul>
+					<li class="courseModules">Term Starts on <b>Tuesday 1st September 2020</b></li>
+					<br>
+					<li class="courseModules">Students are Required to Return to College on <b>Wednesday 9th September 2020</b></li>
+					<br>
+					<li class="courseModules">Half-Term is on <strong>Monday 26 October 2020</strong> to <strong>Friday 30th October</strong></li>
+					<br>
+					<li class="courseModules">Students Return to College on <strong>Monday 2nd November 2020</strong></li>
+					<br>
+					<li class="courseModules">Autumn Term Ends on <strong>Friday 18th December 2020</strong></li>
+					<br>
+					<li class="courseModules">Christmas Holiday Begins on <strong>Monday 21st December 2020</strong> to <strong>Friday 1st January 2021</strong></li>
+	  			</ul>
+  	   			<!-- Un-ordered List is used to Display the Terms Dates for
+	   			Spring Term -->
+	  			<h2>Spring Term 2020</h2>
+				<ul>
+		  			<li class="courseModules">Term Starts and Students need to Return to College on Monday<strong> 4th January 2021</strong></li>
+		  			<br>
+		  			<li class="courseModules">Staff Training (College is Closed to All Students) on <strong>Friday 12th Febuary 2021</strong></li>
+		  			<br>
+		  			<li class="courseModules">Half-Term is on <strong>Friday 12th Febuary</strong> to <strong>Friday 19th Febuary 2021</strong></li>
+		  			<br>
+					<li class="courseModules">Students Return to College on <strong>Monday 22nd Febuary 2021</strong></li>
+					<br>
+					<li class="courseModules">Spring Term Ends on <strong>Friday 2nd April 2021</strong></li>
+					<br>
+					<li class="courseModules">Easter Holiday Begins on <strong>Monday 5th April 2021</strong> to <strong>Friday 16th&nbsp; April 2021</strong></li>
+	  			</ul>
+	   			<!-- Un-ordered List is used to Display the Terms Dates for
+	   			Summer Term -->
+				<h2>Summer Term 2020</h2>
+				<ul>
+					<li class="courseModules">Term Starts on <strong>Monday 19th April 2021</strong></li>
+					<br>
+					<li class="courseModules">Bank Holiday on <strong>Monday 3rd May 2021 </strong>(College is Closed to All Student)</li>
+					<br>
+					<li class="courseModules">Half-Term is on <strong>Monday 31st May 2021</strong> to <strong>Friday 4th June 2021</strong></li>
+					<br>
+					<li class="courseModules">Students Return to College on <strong>Monday 7th</strong> <strong>June 2021</strong></li>
+					<br>
+					<li class="courseModules">Summer Term Ends on <strong>Tuesday 23rd June 2021</strong></li>
+					<br>
+					<li class="courseModules">Summer Holiday Begins on <strong>Wednesday 24th June 2021</strong> to <strong>Tuesday 31st August 2021</strong></li>
+				</ul>
+				<!-- Displaying Necessary Rules/Policies that are in Place in Westlake College -->
+				<p><strong>It is not acceptable for Student to Take Holidays in the Duration of College Term Times</strong></p>
+				<!-- The Ending of the First Content Container for the First Sub-Container -->
+    		</div>
+  		</div>
+  		<!-- Beginning of the Second Sub-Container -->
+  		<div id="sub2">
+  			<!-- The First Container Content box for the Second-Sub Container -->
+    		<div id="sub2Content1">
+    		<!-- The Title for the First Container Content Box -->
+				<div id="sub2Content1Title">
+					<!-- Inline CSS Style is declared for applying spacing on the top for the heading as well as adjusting the font-size of the title to 30 pixels -->
+					<h1 style="font-size: 30px;padding-top: 20px;">Other Pages</h1>
+				<!-- Ending of Title Name for the First Container Content Box -->
+    			</div>
+	      		<!-- This contains an array/collection of hyperlinks for the links that will be used to re-direct to the internal webpages that are within the website -->
+	      		<ul id="ulNavbar">
+		  			<!-- This is the listing of the hyperlinks for re-directing to the internal webpages -->
+	        		<li class="listNavBar"><a class="hyperlinkNavBar" href="Home.html">Home</a></li>
+	        		<li class="listNavBar"><a class="hyperlinkNavBar" href="StudentsPage.html">Students</a></li>
+	        		<li class="listNavBar"><a class="hyperlinkNavBar" href="CoursesPage.html">Courses</a></li>
+	        		<li class="listNavBar"><a class="hyperlinkNavBar" href="Financial_Support.html">Financial Support</a></li>
+	        		<li class="listNavBar"><a class="hyperlinkNavBar" href="Extra_Curriculum.html">Extra Curriculum Activities</a></li>
+				<!-- The ending of the listings for hyperlinks -->
+	      		</ul>
+    		<!-- The ending for the Child container Content1 -->
+    		</div>
+    	<!-- The Closure of the Second Sub-Container -->
+  		</div>
+   		<!-- A button is declared for providing the functionality of automatically scrolling from the users current position automatically to the top of the webpage -->
+   		<!-- Here the topFunction script will provide the functionality that is written in an external JavaScript source file when the user clicks the button based on the event listener attribute used in the html code 'onClick' -->
+  		<button onClick="topFunction()" id="btnTop">Top</button>
+	<!-- The End of the Container -->
+	</div>
+	<!-- Beginning of Footer Tag -->
+	<footer id="footer">
+		<!-- First footer container located on the left-hand side of the footer -->
+		<div id="footerContainer1">
+			<!-- This is the Nested Div Tag for Displaying Westlake College Logo within the footerContainer1 Div Tag --> 
+			<div id="footer_CollegeLogo">
+				<a href="Home.html">
+					<img src="westlakeCollegeLogo_BW.gif" alt="Westlake College Logo">
+				</a>
+				<!-- End of footer_CollegeLogo Div Tag -->
+			</div>
+			<!-- This is the Nested Div Tag for Displaying the Social Media Icon within the footerContainer1 Div Tag --> 
+			<div id="footerSocialMedia_Icons">
+				<!-- The Nested Div Tags below will therefore render the Social Media Icons, as well as specifying padding and space/adjustments for each and every Div Tag -->
+				<div id="footerContainer1_Icons1">
+				<!-- The Nested Div Tags below will therefore render the Social Media Icon, as well as specifying padding and space/adjustments for the particulre Div Tag that represents the Social Media Icons as well as redirecting to the corresponding social media page or YouTube Channel for the Particular Nested Div Tags  -->
+					<a href="https://www.twitter.com/bournville?lang=en/" id="socialMedia_Icons"><i class="fab fa-twitter" style="font-size: 48px;"></i>
+					<!-- Ending of footerContainer1_Icons1 Div Tag -->
+					</a>
+				</div>
+				<div id="footerContainer1_Icons2">
+				<!-- The Nested Div Tags below will therefore render the Social Media Icon, as well as specifying padding and space/adjustments for the particulre Div Tag that represents the Social Media Icons as well as redirecting to the corresponding social media page or YouTube Channel for the Particular Nested Div Tags  -->
+					<a id="socialMedia_Icons" href="https://www.facebook.com/southandcitycollege/">
+						<i class="fab fa-facebook" style="font-size: 48px;"></i>
+					</a> 
+					<!-- Ending of footerContainer1_Icons2 Div Tag -->
+				</div>
+				<div id="footerContainer1_Icons3">
+				<!-- The Nested Div Tags below will therefore render the Social Media Icon, as well as specifying padding and space/adjustments for the particulre Div Tag that represents the Social Media Icons as well as redirecting to the corresponding social media page or YouTube Channel for the Particular Nested Div Tags  -->
+					<a id="socialMedia_Icons" href="https://www.instagram.com/bournvillecollege/?hl=en">
+						<i class="fab fa-instagram" style="font-size: 48px;"></i>
+					</a>
+					<!-- Ending of footerContainer1_Icons3 Div Tag -->
+				</div>
+				<div id="footerContainer1_Icons4">
+				<!-- The Nested Div Tags below will therefore render the Social Media Icon, as well as specifying padding and space/adjustments for the particulre Div Tag that represents the Social Media Icons as well as redirecting to the corresponding social media page or YouTube Channel for the Particular Nested Div Tags  -->
+					<a id="socialMedia_Icons" href="https://www.youtube.com/user/BournvilleCol">
+						<i class="fab fa-youtube" style="font-size: 48px;"></i>
+					</a>
+					<!-- Ending of footerContainer1_Icons4 Div Tag -->
+				</div>
+				<!-- Ending of footerSocialMedia_Icons Div Tag -->
+			</div>
+			<!-- End of footerContainer1 -->
+		</div>
+	<!-- Beginning of navContainer -->
+	<div id="navContainer">
+		<!-- Beginning of footerContainer_Text_row1 for the hyperlinks that are within the footer -->
+	  	<nav id="footerContainer_Text_row1">
+			<!-- Unordered List tag is Used to Declare a Row for displaying the hyperlinks that are within the footer  -->
+			<ul>
+				<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+				<li id="footerLists_Hyperlinks">
+					<a id="footerHyperlinks" href="Home.html">Home</a>
+				</li>
+				<!-- Breakpoint is used to add space for the hyperlinks within the footer-->
+				<br>
+				<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+				<li id="footerLists_Hyperlinks">
+					<a id="footerHyperlinks" href="StudentsPage.html">Students</a>
+				</li>
+				<!-- Breakpoint is used to add space for the hyperlinks within the footer-->
+				<br>
+				<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+				<li id="footerLists_Hyperlinks">
+					<a id="footerHyperlinks" href="CoursesPage.html">Courses</a>
+				</li>
+			</ul>
+		<!-- End of footerContainer_Text_row1 -->
+		</nav>
+		<nav id="footerContainer_Text_row2">
+			<!-- Unordered List tag is Used to Declare a Row for displaying the hyperlinks that are within the footer  -->
+			<ul>
+				<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+				<li id="footerLists_Hyperlinks"><a id="footerHyperlinks" href="Level2_Firsts_Cert_IT.html">BTEC Level 2 Firsts Certificate in IT</a></li>
+				<br>
+				<li id="footerLists_Hyperlinks"><a id="footerHyperlinks" href="Level3_Ext_Dip_IT.html">BTEC Level 3 Extended Diploma in IT</a></li>
+				<br>
+				<li id="footerLists_Hyperlinks"><a id="footerHyperlinks" href="AS_ALevel_Comp_Sci.html">AS/A-Level in Computer Science</a></li>
+			</ul>
+			<!-- End of footerContainer_Text_row2 -->
+		</nav>
+		<nav id="footerContainer_Text_row3">
+			<ul>
+				<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+				<li id="footerLists_Hyperlinks">
+					<a id="footerHyperlinks" href="Financial_Support.html">Financial Support</a>
+				</li>
+				<br>
+					<!-- Breakpoint is used to add space for the hyperlinks within the footer-->
+				<li id="footerLists_Hyperlinks">
+				<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+					<a id="footerHyperlinks" href="Extra_Curriculum.html">Extra-Curriculum Activities</a>
+				</li>
+				<br>
+				<!-- Breakpoint is used to add space for the hyperlinks within the footer-->
+				<!-- List Item is Used to Declare a Row for displaying the hyperlinks that are within the footer of which will redirect to the existing internal webpages within the Westlake Collge Website  -->
+				<li id="footerLists_Hyperlinks">
+					<a id="footerHyperlinks" href="About.html">About Us</a>
+				</li>
+			</ul>
+			<!-- End of footerContainer_Text_row3 -->
+		</nav>
+		<!-- Beginning of navContainer -->
+	</div>
+	<!-- End of Footer Tag -->
+	</footer>
+<!-- End of Body Tag -->
+</body>
+<!-- End of Html Document -->
+</html>
